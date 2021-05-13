@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta name="description" content="Portfolio Andrea Lugini">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap" rel="stylesheet">
+        <title>Portfolio</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>  
+        <script src="script.js"></script>
+    </head>
+    <!-- Fare lo switch theme -->
+    <body class="overflow-x-hidden darkBody">
+        <button id="SwitchTheme" class="font-extralight	focus:outline-none fixed top-1 right-1 mr-2 mt-6 text-2xl z-40">Switch Theme</button>
+        
+        <section id="mainPage" class="pt-16">
+            <div class="text-center  mb-12">
+                <h1 class="text-8xl mb-10">PORTFOLIO</h1> 
+                <div id="name" class="border-white border-t-2 border-b-2 py-2 text-transparent whiteStroke" style="font-size: 10rem; line-height: 0.9;"> 
+                    <span style="transform: translateX(-300%)" class="animName block">LUGINI</span>
+                    <span style="transform: translateX(+300%)" class="animName block mb-4">ANDREA</span>
+                </div>
+            </div>
+            <div class="relative w-5/12 m-auto  mb-12">
+                <button class="scuolaBtn myButton focus:outline-none hover:bg-purple-800 transition-colors bg-red-800 border-white border-2"> Scuola</button>
+                <button class="meBtn myButton focus:outline-none hover:bg-purple-800 transition-colors absolute right-0 bg-red-800 border-white border-2">About Me</button>
+            </div> 
+        </section> 
+
+        <section id="aboutMe" class="mt-16 darkBody">
+            <div class="text-center w-3/4 m-auto mb-28">
+                <h1 class="text-8xl mb-16">About Me</h1> 
+            <p class="text-left text-2xl">Ciao! <br>Sono Andrea. Nato il 5/10/2003 a Reggio nell'Emilia.
+                Nel 2006 sono partito e ho poi vissuto 4 anni a Praga, dove ho studiato
+                presso la <i><a class="text-red-500  hover:text-blue-200 transition-colors" href='https://www.nordangliaeducation.com/schools/prague/british-international' target="_blank">Prague British International School</a></i>, interfacciandomi con altre culture estere. <br>
+                Nel 2010 torno a Reggio, dove vivo ancora oggi, e dal 2017 frequento il <i><a class="text-red-500 hover:text-blue-200 transition-colors" href='https://www.pascal.edu.it/' target="_blank">Blaise Pascal</a></i>.<br>
+                Attualmente mi trovo a Saragozza in Erasmus, lavorando per l'azienda <i><a class="text-red-500  hover:text-blue-200 transition-colors" href='https://neki.it/'>Neki</a></i>.</p> 
+            </div>
+            <div class="relative w-5/12 m-auto mb-12">
+                <button class="scuolaBtn myButton focus:outline-none hover:bg-purple-800 transition-colors bg-red-800 border-white border-2">Scuola</button>
+                <button class="homeBtn myButton focus:outline-none hover:bg-purple-800 transition-colors absolute right-0 bg-red-800 border-white border-2">Home</button>  
+            </div>
+        </section>
+        <section id="scuola" class="mt-16 darkBody">
+            <div class="text-center w-3/4 m-auto mb-28 relative">
+                <h1 class="text-8xl mb-16">Scuola</h1> 
+                <div class="text-xl mb-24 overflow-hidden flex">
+                    <div style="width:40%">
+                        <button class="pb-4 years2 hover:text-blue-200 transition-colors text-red-500 focus:outline-none">Anno Scolastico 2019/2020</button>
+                        <button class="pb-4 years2 hover:text-blue-200 transition-colors text-red-500 focus:outline-none">Anno Scolastico 2020/2021</button>
+                        <button class="pb-4 years2 hover:text-blue-200 transition-colors text-red-500 focus:outline-none">Anno Scolastico 2021/2022</button>
+                    </div>
+                    <p id="schoolText" class="pt-12"> Svolte 2 ore di aggiornamento sulla sicurezza sui pericoli elettrici e sull'uso del videoterminale
+                        con i professori Nicola Carpanoni e Gloria Medici.
+                        <br> <br>
+                        Svolte 5 ore di PCTO col progetto MontaSmonta tramite DAD su scelta, assemblaggio e configurazione iniziale di un computer.
+                    </p>
+                </div>   
+            </div>
+            <div class="relative w-5/12 m-auto mb-12">
+                <button class="meBtn myButton focus:outline-none hover:bg-purple-800 transition-colors bg-red-800 border-white border-2">About Me</button>
+                <button class="homeBtn myButton focus:outline-none hover:bg-purple-800 transition-colors absolute right-0 bg-red-800 border-white border-2">Home</button>  
+            </div>
+        </section>
+    </body>
+
+
+</html>
