@@ -69,8 +69,54 @@ $(document).ready(function () {
         }
     });
 
+    var nowText = 0;
 
+function animateSchoolText(fromText, text) {
+    let rule = "";
+    if(nowText != fromText) {
+        rule = "+110";
+        $("#schoolText").animate({now:rule}, {
+            duration:400,
+            step:(now) => {
+                $('#schoolText').css("transform", "translateX(" + now +"%)"); 
+            },
+            done:() => {
+                rule = "0";
+                $("#schoolText").html(text);
+                setTimeout(() =>{
+                    $('#schoolText').animate( {now: rule}, {
+                        duration:400,
+                        step: (now) => {
+                            $('#schoolText').css("transform", "translateX(" + now +"%)"); 
+                        },           
+                    }), 200;
+                })
+            }
+        });
+    }
+    nowText = fromText;
+}
 
+$(".years2").eq(0).click( ()=> {
+    console.log(this);
+    animateSchoolText(0, `Svolte 2 ore di aggiornamento sulla sicurezza sui pericoli elettrici e sull'uso del videoterminale
+                            con i professori Nicola Carpanoni e Gloria Medici.
+                            <br> <br>
+                            Svolte 5 ore di PCTO col progetto MontaSmonta tramite DAD su scelta, assemblaggio e configurazione iniziale di un computer.`);
 });
+$(".years2").eq(1).click( ()=> {
+    console.log(this); 
+    animateSchoolText(1, "Al momento in Erasmus a Saragozza presso la Neki Creativos S.R.L. <br> <br> <br> <br> <br>");
+});
+$(".years2").eq(2).click( ()=> {
+    console.log(this);
+    animateSchoolText(2, "Work in Progress! <br> <br> <br> <br> <br> <br>");
+});
+});
+
+
+
+
+
 
         

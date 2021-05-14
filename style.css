@@ -66,3 +66,7 @@ section + section {
     display: none;
     z-index: 10;
 }
+#schoolText {
+    box-shadow: -10px 8px 2px #888888;
+    z-index: 40;
+}
