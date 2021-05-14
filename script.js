@@ -10,6 +10,7 @@ $(document).ready(function () {
                                     hover:bg-purple-800 hover:bg-blue-500`);
         $("a").toggleClass("hover:text-blue-200 hover:text-blue-500");
         $("section").toggleClass("darkBody ligthBody");
+        $("#schoolText").toggleClass("bg-red-800 bg-red-500");
     });
 
     $(".scuolaBtn").click(function () {
